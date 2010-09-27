@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sprockets-foo}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben Curren"]
@@ -48,13 +48,15 @@ Gem::Specification.new do |s|
      "ext/sprockets_with_directives/test/test_source_line.rb",
      "lib/sprockets-foo.rb",
      "lib/sprockets/directives/template_directive.rb",
+     "sprockets-foo.gemspec",
      "test/fixtures/requiring_a_template_should_compile_then_require.js",
      "test/fixtures/requiring_a_template_with_namespace_should_compile_then_require.js",
      "test/fixtures/src/MyTemplate.ejs",
      "test/fixtures/src/MyTemplate.js",
      "test/fixtures/src/or/ui/MyNamespacedTemplate.ejs",
      "test/fixtures/src/or/ui/MyNamespacedTemplate.js",
-     "test/test_helper.rb"
+     "test/test_helper.rb",
+     "test/test_template_directive.rb"
   ]
   s.homepage = %q{http://github.com/bcurren/sprockets-foo}
   s.rdoc_options = ["--charset=UTF-8"]
