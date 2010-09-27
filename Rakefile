@@ -10,7 +10,7 @@ begin
     gem.email = "ben@outright.com"
     gem.homepage = "http://github.com/bcurren/sprockets-foo"
     gem.authors = ["Ben Curren"]
-    gem.add_dependency "ejs-rcompiler", ">= 0.1.1"
+    gem.add_dependency "ejs-rcompiler", ">= 0.1.2"
     # gem.add_dependency "sprockets", ">= " # use when sprockets directive branch is merged
     Dir.glob('ext/**/*.rb').each { |f| gem.files << f }
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
