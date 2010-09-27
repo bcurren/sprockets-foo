@@ -1,4 +1,4 @@
-= sprockets_templates
+= sprockets-foo
 
 Description goes here.
 

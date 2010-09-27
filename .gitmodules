@@ -1,0 +1,3 @@
+[submodule "ext/sprockets_with_directives"]
+	path = ext/sprockets_with_directives
+	url = http://github.com/sstephenson/sprockets.git
