@@ -16,7 +16,7 @@ class PreprocessorTest < Test::Unit::TestCase
       window.or = window.or || {};
       window.or.ui = window.or.ui || {};
       window.or.ui.MyNamespacedTemplate = window.or.ui.MyNamespacedTemplate || {};
-      or.ui.MyNamespacedTemplate.template = function(options) {
+      or.ui.MyNamespacedTemplate.render = function(options) {
         var p = [];
         with(options) {
           p.push('<p>Content</p>\\n');
@@ -35,7 +35,7 @@ class PreprocessorTest < Test::Unit::TestCase
       
       
       window.MyTemplate = window.MyTemplate || {};
-      MyTemplate.template = function(options) {
+      MyTemplate.render = function(options) {
         var p = [];
         with(options) {
           p.push('<p>Content</p>\\n');

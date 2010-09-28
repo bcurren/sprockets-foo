@@ -8,15 +8,19 @@ module Sprockets
       end
       
       def evaluate_in(preprocessor)
-        compile_ejs
-        super(preprocessor)
+        if template_file_path
+          compile_ejs(template_file_path.to_s)
+          super(preprocessor)
+        else
+          raise_load_error
+        end
       end
       
       protected
         
-        def compile_ejs
+        def compile_ejs(source_file)
           compiler = Ejs::Compiler.new
-          compiler.compile(template_file_path.to_s, namespace)
+          compiler.compile(source_file, namespace)
         end
         
         def namespace

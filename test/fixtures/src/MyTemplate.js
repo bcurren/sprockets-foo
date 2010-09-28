@@ -2,7 +2,7 @@
 
 
 window.MyTemplate = window.MyTemplate || {};
-MyTemplate.template = function(options) {
+MyTemplate.render = function(options) {
   var p = [];
   with(options) {
     p.push('<p>Content</p>\n');
