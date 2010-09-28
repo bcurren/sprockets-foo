@@ -46,6 +46,12 @@ class PreprocessorTest < Test::Unit::TestCase
     LINES
   end
   
+  def test_requiring_a_file_that_does_not_exist_should_raise_an_error
+    assert_raises(Sprockets::LoadError) do
+      require_file_for_this_test
+    end
+  end
+  
   protected
   
     attr_reader :environment, :preprocessor
