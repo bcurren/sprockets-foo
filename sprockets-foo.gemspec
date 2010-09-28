@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sprockets-foo}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben Curren"]
@@ -49,6 +49,7 @@ Gem::Specification.new do |s|
      "lib/sprockets-foo.rb",
      "lib/sprockets/directives/template_directive.rb",
      "sprockets-foo.gemspec",
+     "test/fixtures/requiring_a_file_that_does_not_exist_should_raise_an_error.js",
      "test/fixtures/requiring_a_template_should_compile_then_require.js",
      "test/fixtures/requiring_a_template_with_namespace_should_compile_then_require.js",
      "test/fixtures/src/MyTemplate.ejs",
